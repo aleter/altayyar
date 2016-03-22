@@ -1,0 +1,216 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="external/fullpage/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="external/fullpage/jquery.fullPage.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css\from_ed.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/div_logo.css">
+    <link rel="stylesheet" type="text/css" href="css/simple_sidebar.css">
+  </head><body>
+    <script>
+      function InitFullpage () {
+      			$('#fullpage').fullpage({
+      				sectionsColor: ['#ffffff', '#ffffff', '#ffffff'],
+      				anchors: ['firstPage', 'secondPage', 'thirdPage'],
+					slidesNavigation: true,
+					navigation: true,
+					navigationPosition: 'right',
+      				menu: '#menu',
+      			});
+      		};
+      
+      
+        	function fixToCenter(elem)
+    		{
+    			elem.css("position","absolute");
+    			elem.css("top", (($(window).height() - $(elem).outerHeight()) / 2) + 
+    				$(window).scrollTop() + "px");
+    			elem.css("left", (($(window).width() - $(elem).outerWidth()) / 2) + 
+    				$(window).scrollLeft() + "px");
+    		}
+    
+    		$(document).ready(function(){ 
+    			InitFullpage ();
+    			$("#fullpage").hide();
+    			$("#menu").hide();
+    			PopUpShow();
+    		});
+    
+    		function ShowPages()
+    		{
+    			var fp = $("#fullpage");
+    			fp.show();
+    	    	fp.css({ 'opacity' : 0.0 });
+    	    	fp.animate({
+    	    		opacity: 1.0
+    	    	}, 200, "swing");
+    		}
+  
+    	    function PopUpShow(){
+    	    	var elem = $("#div_logo");
+    	    	elem.show();
+    	    	elem.css({ 'opacity' : 1.0, zIndex : 1001 });
+    	    	$( "#img1" ).css({ 'opacity' : 0.0});
+    	    	$( "#img2" ).css({ 'opacity' : 0.0});
+    	    	elem.children( "img" ).css({ "background-color" : "rgba(204, 204, 204, 0.0)" });
+    	    	fixToCenter(elem);	    
+    	    	$( "#img1" ).animate({
+    	    		opacity: 1.0
+    	    	}, 1000, "easeInSine");
+    	    	$( "#img2" ).animate({
+    	    		opacity: 1.0
+    	    	}, 2000, "easeOutQuad",
+  	  	    	function()
+  	  	    	{
+  	  	    		elem.animate({ top: "50px", left: "-200px"}, 600, "easeOutCubic");
+  	  	    		$( "#img1" ).animate({ width: "30%" }, 600, "easeOutCubic"); 
+  	  	    		$( "#img2" ).animate({ width: "30%" }, 600, "easeOutCubic", ShowPages); 
+  	  	    	}
+    	    	);	    	  
+    	    }
+    </script>
+    
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">                    	
+                    	<div id="fullpage" class="para-main-text">
+	                        <div class="section " id="section0" alt="firstPage">
+	                        <h1 class="para-header1" align="center">INTRODUCTION</h1>
+				            <p>&nbsp;&nbsp;&nbsp;&nbsp;
+				            	<b class="para-company-italic-selector">Al Tayyar Aluminum & Steel</b> has its headquarters in Abu Dhabi, UAE. Established on the 3rd of July 2011, Al Tayyar Aluminum & Steel has been recognized as one of the area’s most experienced companies in shaping a new trend of modernizing building
+								façades in the United Arab Emirates. 
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;
+								Today, <b class="para-company-italic-selector">Al Tayyar Aluminum & Steel</b> takes on the role of main contractor for small to large size projects and performs with its 
+								best consultants, engineers, designers and administrative experts that are current on the latest technology and performs 
+								value-added services, capable of responding to client’s requirements and meeting their expectations. 
+								With our highly rated quality aluminum and steel products, providing ISO Certified services in installation, maintenance systems 
+								and support, we are able to help property developers, architects and building owners renew and transform the façade / exterior 
+								envelop of buildings. We focus on streamlining the process of aluminum installation works, providing feasibility and develop-
+								ment for refurbishment of existing cladding as well as re-cladding and over cladding of existing offices, towers, buildings as 
+								well as villas. 
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;
+								<b class="para-company-italic-selector">Al Tayyar Aluminum & Steel</b> is unique in providing specialized Façade Consultancy and not just changing outer building 
+								appearances, it also focuses on sustainability. 
+							<h1 class="para-header1" align="center">VISION & VALUES</h1>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;
+								To be a leader in façade consulting, metal and iron works, aluminum installation on a truly global scale and lead the market trend 
+								with constant innovation and be among the most sustainable firms in the world. Our employees flourish to the best of their abil-
+								ities and we take responsibility for people and the environment with sustainable products.</p>
+			              	</div>
+
+
+
+
+			              	<div class="section " id="section2" alt="secondPage">
+			                	<h1 class="para-header1">BOARD OF DIRECTORS</h1>
+
+			                	<div class="section">
+							      <div class="container">
+							        <div class="row">
+							          <div class="col-lg-4" align="center">
+							            <img src="data/portrait.png"
+							            class="img-responsive">
+							            <h2>A Title</h2>
+							            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+							              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+							              <br>Ut enim ad minim veniam, quis nostrud</p>
+							          </div>
+							          <div class="col-lg-4" align="center">
+							            <img src="data/portrait.png"
+							            class="img-responsive">
+							            <h2>A title</h2>
+							            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+							              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+							              <br>Ut enim ad minim veniam, quis nostrud</p>
+							          </div>
+							          <div class="col-lg-4" align="center">
+							            <img src="data/portrait.png"
+							            class="img-responsive">
+							            <h2>A title</h2>
+							            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+							              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+							              <br>Ut enim ad minim veniam, quis nostrud</p>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+
+
+			               		<p>&nbsp;&nbsp;&nbsp;&nbsp;
+			               		Create Beautiful Fullscreen Scrolling Websites
+			              	</div>
+
+
+							<div class="section " id="section3" alt="thirdPage">
+			                	<h1 class="para-header1">CLIENTS & PROJECTS UNDERTAKEN</h1>
+			                	<div class="slide" id="slide1" data-anchor="slide1">
+									<div class="intro">
+										<h1>Clickable</h1>
+										<p>
+											You can even click on the navigation and jump directly to another section.
+										</p>
+									</div>
+								</div>
+
+							    <div class="slide" id="slide2" data-anchor="slide2">
+									<h1>Slide 2</h1>
+								</div>
+
+								<div class="slide" id="slide3" data-anchor="slide3">
+									<h1>Slide 3</h1>
+								</div>	<div class="slide" id="slide3" data-anchor="slide3">
+									<h1>Slide 4</h1>
+								</div>
+								<div class="slide" id="slide3" data-anchor="slide3">
+									<h1>Slide 5</h1>
+								</div>
+			                </div>
+
+		              	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+        <div class="area" id="div_logo">
+        	<div align="center">
+          		<img id="img1" src="data/logo_w_txt.png">
+      		</div>
+         	<p>
+     		<div align="center">
+          		<img id="img2" src="data/logo_text.png">
+      		</div>
+          	<p>
+          	<div align="center">
+            	<ul id="menu">
+              		<li data-menuanchor="firstPage">
+              			<a class="btn btn-primary" href="#firstPage">Click me</a>
+              		</li>
+              		<li data-menuanchor="secondPage">
+              			<a class="btn btn-primary" href="#secondPage">Click me</a>
+              		</li>
+        		</ul>
+          	</div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+  
+
+</body></html>

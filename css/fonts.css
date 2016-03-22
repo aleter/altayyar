@@ -1,0 +1,52 @@
+@font-face {
+    font-family:"Helvetica";
+    src: url("fonts/HelveticaNeueLTStd-Bd.ttf")
+}
+
+@font-face {
+    font-family:"HelveticaIt";
+    src: url("fonts/HelveticaNeueLTStd-BdIt.ttf")
+}
+
+@font-face {
+    font-family:"HelveticakIt";
+    src: url("fonts/HelveticaNeueLTStd-BlkIt.ttf")
+}
+
+@font-face {
+    font-family:"HelveticaMd";
+    src: url("fonts/HelveticaNeueLTStd-Md.ttf")
+}
+
+.logo-header1 {
+    font-family:'HelveticakIt';
+    color: #25408f;
+    font-size: 72px;
+    font-weight:400;
+    text-align: center;
+}
+
+.para-header1 {
+    font-family:'Helvetica';
+    color: #25408f;
+    padding-left: 0px;
+    font-size: 32px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.para-company-italic-selector {
+    font-family:'Helvetica';
+    color: #25408f;
+    font-size: 20px;
+    font-style: italic;
+    font-weight:medium;
+    text-align: center;
+}
+
+.para-main-text {
+    font-family:'HelveticaMd';
+    color: #25408f;
+    font-weight:normal;
+    font-size: 18px;
+}

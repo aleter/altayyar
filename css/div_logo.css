@@ -1,0 +1,15 @@
+div#div_logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 0px;
+    padding: 0px;
+    display: none;
+}
+
+.header1 {
+    font-family:'Agency FB', sans-serif;
+    font-size: 26px;
+    font-weight:normal;
+    text-align: left;
+}
